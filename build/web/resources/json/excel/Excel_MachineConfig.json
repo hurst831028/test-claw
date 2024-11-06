@@ -1,0 +1,10 @@
+[
+    {
+        "ID": "ID_1000",
+        "IsNeedUnLock": false,
+        "UnlockIncubatorCost": "point,0,point,200,gem,100",
+        "Test": "1,2,3,4,5,6,7,8",
+        "Prefab": "resources/prefabs/machine/1000/P_Machine.lh",
+        "CollectionList": "ID_10003001,ID_10003002,ID_10003003,ID_10003004,ID_10003005,ID_10003006,ID_10003007,ID_10003008,ID_10003009,ID_10003010,ID_10003011,ID_10003012,ID_10003013,ID_10003014,ID_10003015,ID_10003016,ID_10003017,ID_10003018"
+    }
+]

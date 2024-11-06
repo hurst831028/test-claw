@@ -1,0 +1,1 @@
+{"_$ver":1,"_$id":"y8sffs2p","_$type":"Box","name":"Box","width":128,"height":128,"anchorX":0.5,"anchorY":0.5,"_$child":[{"_$id":"uodd0bpl","_$type":"Sprite","name":"Sprite","x":-11,"y":-11,"width":150,"height":150,"texture":{"_$uuid":"../../textures/common/T_Star_2.png","_$type":"Texture"},"_$comp":[{"_$type":"TFSmKJ9qS7e3rXvq2nuTug"}]}]}

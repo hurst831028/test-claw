@@ -1,0 +1,56 @@
+[
+    {
+        "ID": "ID_10002001",
+        "IncubationTime": 0,
+        "Prefab": "resources/prefabs/egg/P_10002001.lh",
+        "Texture": "resources/textures/egg/T_10002001.png",
+        "Scale": 0.8,
+        "Sfx": "SFX_EggFind01",
+        "ClientHandle": "point"
+    },
+    {
+        "ID": "ID_10002002",
+        "IncubationTime": 0,
+        "Prefab": "resources/prefabs/egg/P_10002002.lh",
+        "Texture": "resources/textures/egg/T_10002002.png",
+        "Scale": 0.8,
+        "Sfx": "SFX_EggFind02",
+        "ClientHandle": "gem"
+    },
+    {
+        "ID": "ID_10001001",
+        "IncubationTime": 10,
+        "Prefab": "resources/prefabs/egg/P_10001001.lh",
+        "Texture": "resources/textures/egg/T_10001001.png",
+        "Scale": 1.0,
+        "Sfx": "SFX_EggFind01",
+        "ClientHandle": "egg"
+    },
+    {
+        "ID": "ID_10001101",
+        "IncubationTime": 120,
+        "Prefab": "resources/prefabs/egg/P_10001101.lh",
+        "Texture": "resources/textures/egg/T_10001101.png",
+        "Scale": 0.8,
+        "Sfx": "SFX_EggFind02",
+        "ClientHandle": "egg"
+    },
+    {
+        "ID": "ID_10001102",
+        "IncubationTime": 240,
+        "Prefab": "resources/prefabs/egg/P_10001102.lh",
+        "Texture": "resources/textures/egg/T_10001102.png",
+        "Scale": 0.8,
+        "Sfx": "SFX_EggFind02",
+        "ClientHandle": "egg"
+    },
+    {
+        "ID": "ID_10001103",
+        "IncubationTime": 480,
+        "Prefab": "resources/prefabs/egg/P_10001103.lh",
+        "Texture": "resources/textures/egg/T_10001103.png",
+        "Scale": 0.7,
+        "Sfx": "SFX_EggFind02",
+        "ClientHandle": "egg"
+    }
+]
