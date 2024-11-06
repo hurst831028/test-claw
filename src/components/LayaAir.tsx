@@ -1,7 +1,7 @@
 import { type FC, useRef, useEffect, useState } from 'react';  
-import { useLaunchParams, miniApp, useSignal, viewport } from '@telegram-apps/sdk-react';
+import { useLaunchParams, miniApp, useSignal, viewport, on } from '@telegram-apps/sdk-react';
 import { AppRoot} from '@telegram-apps/telegram-ui';
-import { Navigate, Route, Routes, HashRouter } from 'react-router-dom';
+//import { Navigate, Route, Routes, HashRouter } from 'react-router-dom';
 
 export const LayaAir: FC = () => { 
     const lp = useLaunchParams();
@@ -11,9 +11,73 @@ export const LayaAir: FC = () => {
     //const canvasWidth = viewport?.width;
     //const canvasHeight = viewport?.height;
 
-     // 使用 state 来动态存储 canvas 的宽高
-     const [canvasWidth, setCanvasWidth] = useState<number>(window.innerWidth);
-     const [canvasHeight, setCanvasHeight] = useState<number>(window.innerHeight);
+        // 使用 state 来动态存储 canvas 的宽高
+    const [canvasWidth, setCanvasWidth] = useState<number>(window.innerWidth);
+    const [canvasHeight, setCanvasHeight] = useState<number>(window.innerHeight);
+
+    useEffect(() => {  
+
+        //miniApp.setBgColor('#000000');
+        miniApp.setHeaderColor('#000000');
+        miniApp.ready()
+
+        //mainButton.hide();
+        
+        // closingBehavior.enableConfirmation();
+
+        // let progress = 0;  
+        // const interval = setInterval(() => {  
+        //     progress += 0.1;  
+        //     setLoadingProgression(progress);  
+        //     if (progress >= 1) {  
+        //         setIsLoaded(true);  
+        //         clearInterval(interval);  
+        //     }  
+        // }, 100); 
+        
+        //######
+        // const sendMessageToGame = (message: any) => {  
+        //     if (iframeRef.current && iframeRef.current.contentWindow && iframeRef.current.contentWindow.postMessage) {  
+        //         iframeRef.current.contentWindow.postMessage(message, '*'); // 第二个参数是目标源，'*'表示不限制源，但在生产环境中应该替换为允许的源列表  
+        //     }  
+        // };
+
+        // 设置消息监听器  
+        function handleMessage(event: MessageEvent) {  
+
+            //if (event.origin !== 'http://your-layaair-game-origin.com') {  
+            //  return;  
+            //}  
+        
+            // 处理接收到的消息  
+            const message = event.data;  
+            // 根据消息类型执行相应的操作
+            if (message.type === 'GAME_EVENT') {  
+                // 处理游戏事件  
+                // console.log('Received message from iframe:', message);  
+                // console.log('event.origin:', event.origin); 
+
+                // const message2 = { type: 'REACT_MESSAGE', data: { 369:369 } };  
+                // sendMessageToGame(message2);  
+
+            } else if (message.type === 'GAME_LOG') {
+                console.log('GAME_LOG:', message);
+            }
+        }  
+        
+        // 添加消息监听器到 window 对象  
+        window.addEventListener('message', handleMessage, false);  
+        
+        const removeListener = on('viewport_changed', payload => {
+            console.log('Viewport changed:', payload);
+        });
+
+        // 清理函数，用于组件卸载时移除事件监听器  
+        return () => {  
+            window.removeEventListener('message', handleMessage);  
+            removeListener();
+        };  
+    }, []); 
 
     useEffect(() => {  
         if (viewport) {  
