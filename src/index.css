@@ -1,0 +1,11 @@
+body {
+  background: var(--tg-theme-secondary-bg-color, white);
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "LanaPixel";
+  font-weight: 400;
+  src: url('/build/web/resources/font/LanaPixel.ttf');
+}
