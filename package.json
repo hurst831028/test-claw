@@ -10,7 +10,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build && shx cp -r build dist"
   },
   "dependencies": {
     "@telegram-apps/sdk-react": "^2.0.7",
