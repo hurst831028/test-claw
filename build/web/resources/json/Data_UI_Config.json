@@ -7,48 +7,81 @@
   ],
   "uiConfigs": [
     {
-      "uiName": "UI_Touch_Layer_HUD",
+      "uiName": "UI_Background_HUD",
       "uiPackage": "UI_Window",
+      "withBackground": false,
       "layer": 10
     },
     {
       "uiName": "UI_FX_Layer_HUD",
       "uiPackage": "UI_Window",
-      "layer": 300
-    },
-    {
-      "uiName": "UI_Main_Menu_HUD",
-      "uiPackage": "UI_Window",
-      "layer": 150
+      "withBackground": true,
+      "layer": 280
     },
     {
       "uiName": "UI_Loading_HUD",
       "uiPackage": "UI_Loading",
+      "withBackground": true,
       "layer": 300
     },
     {
       "uiName": "UI_MessageBoxOne_HUD",
       "uiPackage": "UI_Window",
+      "withBackground": true,
+      "layer": 200
+    },
+    {
+      "uiName": "UI_Tips_HUD",
+      "uiPackage": "UI_Window",
+      "withBackground": false,
       "layer": 200
     },
     {
       "uiName": "UI_Invite_Friends_HUD",
       "uiPackage": "UI_Window",
+      "withBackground": true,
       "layer": 150
     },
     {
       "uiName": "UI_FX_Coin_Background_HUD",
       "uiPackage": "UI_Window",
+      "withBackground": true,
       "layer": 140
-    },
-    {
-      "uiName": "UI_Tips_HUD",
-      "uiPackage": "UI_Window",
-      "layer": 200
     },
     {
       "uiName": "UI_Task_HUD",
       "uiPackage": "UI_Window",
+      "withBackground": true,
+      "layer": 150
+    },
+    {
+      "uiName": "UI_ShowItem_HUD",
+      "uiPackage": "UI_Window",
+      "withBackground": true,
+      "layer": 150
+    },
+    {
+      "uiName": "UI_ShowEggIncuabtion_HUD",
+      "uiPackage": "UI_Window",
+      "withBackground": true,
+      "layer": 150
+    },    
+    {
+      "uiName": "UI_UnlockEggIncuabtion_HUD",
+      "uiPackage": "UI_Window",
+      "withBackground": true,
+      "layer": 150
+    },    
+    {
+      "uiName": "UI_Collection_HUD",
+      "uiPackage": "UI_Window",
+      "withBackground": true,
+      "layer": 150
+    },    
+    {
+      "uiName": "UI_ClaimItem_HUD",
+      "uiPackage": "UI_Window",
+      "withBackground": true,
       "layer": 150
     }
   ]
