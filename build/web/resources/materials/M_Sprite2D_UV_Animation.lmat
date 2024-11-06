@@ -1,1 +1,0 @@
-{"version":"LAYAMATERIAL:04","props":{"textures":[],"type":"Shader_Sprite2DUVAnimation","renderQueue":2000,"materialRenderMode":0,"s_Cull":2,"s_Blend":0,"s_BlendSrc":6,"s_BlendDst":1,"s_BlendSrcRGB":1,"s_BlendDstRGB":0,"s_BlendSrcAlpha":1,"s_BlendDstAlpha":0,"s_DepthTest":1,"s_DepthWrite":true,"u_TilingOffset":[1,1,0,0],"u_Time":1,"u_UVSpeed":[-4,-3],"defines":["TEXTUREVS"]}}
