@@ -111,7 +111,7 @@ export const LayaAir: FC = () => {
             <div>
                 <iframe  
                     ref={iframeRef}  
-                    src="/build/web/index.html"  
+                    src="build/web/index.html"  
                     width={`${canvasWidth}px`}
                     height={`${canvasHeight}px`}
                     frameBorder="0"  
